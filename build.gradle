@@ -11,19 +11,26 @@ repositories {
 }
 
 dependencies {
-    compile 'org.eclipse.jgit:org.eclipse.jgit:4.2.0.201601211800-r'
     checkstyle 'com.puppycrawl.tools:checkstyle:5.9'
     pmd        'net.sourceforge.pmd:pmd-java:5.2.3'
     findbugs   'com.google.code.findbugs:findbugs:3.0.1'
+    compile    'junit:junit:4.7'
 }
 
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId 'net.praqma.utils.parsers.commitmessage'
+            groupId 'net.praqma.utils.parsers.cmg'
             artifactId 'commit-message-parser'
             from components.java
         }
+    }
+}
+
+// Unittesting
+test {
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
     }
 }
 

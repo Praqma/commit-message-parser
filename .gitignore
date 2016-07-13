@@ -20,3 +20,7 @@ gradle-app.setting
 
 # Emacs
 *~
+
+# idea
+*.iml
+.idea
