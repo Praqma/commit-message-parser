@@ -1,4 +1,9 @@
-package net.praqma.utils.parsers.cmg;
+package net.praqma.utils.parsers.cmg.impl;
+
+import net.praqma.utils.parsers.cmg.api.CommitMessageParser;
+import net.praqma.utils.parsers.cmg.api.Issue;
+import net.praqma.utils.parsers.cmg.api.TransitionType;
+import net.praqma.utils.parsers.cmg.impl.GitHub;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -19,7 +24,7 @@ public class GitHubTest {
         assertEquals("123", issues.get(0).getIssue());
         assertEquals(new URL(baseUrl, baseProject + "/issues/123").toString(), issues.get(0).getUrl().toString());
 
-        issues = parser.parse("mention #123 in my super fix");
+        issues = parser.parse("ignored text #123 in my super fix");
         assertEquals(1, issues.size());
         assertEquals(TransitionType.REFERENCE, issues.get(0).getTransition());
         assertEquals("123", issues.get(0).getIssue());

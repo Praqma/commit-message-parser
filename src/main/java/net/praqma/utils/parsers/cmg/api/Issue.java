@@ -1,4 +1,7 @@
-package net.praqma.utils.parsers.cmg;
+package net.praqma.utils.parsers.cmg.api;
+
+import net.praqma.utils.parsers.cmg.api.TransitionType;
+import net.praqma.utils.parsers.cmg.impl.GitHub;
 
 import java.net.URL;
 import java.util.logging.Logger;

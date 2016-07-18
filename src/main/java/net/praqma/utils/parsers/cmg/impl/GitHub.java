@@ -1,4 +1,8 @@
-package net.praqma.utils.parsers.cmg;
+package net.praqma.utils.parsers.cmg.impl;
+
+import net.praqma.utils.parsers.cmg.api.Issue;
+import net.praqma.utils.parsers.cmg.api.TransitionType;
+import net.praqma.utils.parsers.cmg.api.CommitMessageParser;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -10,7 +14,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 // Based on rules described here https://help.github.com/articles/closing-issues-via-commit-messages/
-public class GitHub implements CommitMessageParser{
+public class GitHub implements CommitMessageParser {
     private static final Logger log = Logger.getLogger(GitHub.class.getName());
     private static final Pattern issuePattern = Pattern.compile("([A-Za-z]+)(\\s+)(([A-Za-z0-9\\_\\-]*/?[A-Za-z0-9\\_\\-]*)(#{1}[0-9]+))", Pattern.MULTILINE);
     private static final List<String> magicWords = Arrays.asList("close", "closes", "closed", "fix", "fixes", "fixed", "resolve", "resolves", "resolved");
