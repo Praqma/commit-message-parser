@@ -2,7 +2,7 @@
 
 ## GitHub issues
 
-Parser follows guidelines outline by [GitHub](https://help.github.com/articles/closing-issues-via-commit-messages/)
+Parser follows [guidelines outline by GitHub](https://help.github.com/articles/closing-issues-via-commit-messages/)
 In addition parser supports to additional key words - reopen and revert. In this case issue reference will have type REVERT
 which might be handy to point out that change was reverted
 
@@ -21,7 +21,7 @@ Example logs
 
 ## Atlassian Jira
 
-Parser follows guidelines outlined by [Atlassian](https://confluence.atlassian.com/fisheye/using-smart-commits-298976812.html) (See workflow section)
+Parser follows [guidelines outlined by Atlassian](https://confluence.atlassian.com/fisheye/using-smart-commits-298976812.html) (See workflow section)
 Supported key words - close and resolve.
 In addition parser supports to additional key words - reopen and revert. In this case issue reference will have type REVERT
 which might be handy to point out that change was reverted
@@ -42,11 +42,12 @@ Example logs
 
 ## Get the library
 
-Follow [JitPack institutions](https://jitpack.io/#Praqma/tracey-protocol-eiffel)
+Follow [JitPack institutions](https://jitpack.io/#Praqma/commit-message-parser)
 
 ## Known usages
 
 * [Tracey version of Eiffel protocol implementation](https://github.com/praqma/tracey-protocol-eiffel)
+
 ...
 
 ## Definition of Done for the contribution
