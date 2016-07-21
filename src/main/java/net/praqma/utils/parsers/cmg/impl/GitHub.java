@@ -60,7 +60,7 @@ public class GitHub implements CommitMessageParser {
                 url = new URL(baseUrl, baseProject + "/issues/" + issueNumber);
             }
             final Issue issue = new Issue(type, issueNumber, url);
-            log.info("Found issue " + issue.getIssue() + " with transition type " + issue.getTransition() + " and URL to the issue " + issue.getUrl().toString());
+            log.fine("Found issue " + issue.getIssue() + " with transition type " + issue.getTransition() + " and URL to the issue " + issue.getUrl().toString());
             issues.add(issue);
         }
         return issues;
