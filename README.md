@@ -1,4 +1,4 @@
-[![Build Status](https://api.travis-ci.org/Praqma/commit-message-parser.svg?branch=master)](https://travis-ci.org/Praqma/commit-message-parser)
+[![License](https://img.shields.io/badge/license-New%20BSD-blue.svg)](LICENSE) [![Build Status](https://api.travis-ci.org/Praqma/commit-message-parser.svg?branch=master)](https://travis-ci.org/Praqma/commit-message-parser)
 
 # Collection of parsers to extract issues from commit messages
 
